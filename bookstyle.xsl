@@ -7,19 +7,14 @@
 <xsl:output method="html"/>
 <!-- create the root template which will define the set of rules that will be applied to the root node of the XML document. 
      The forward slash (/) matches the root node of the XML document.  -->
-<!-- Every XSLT transformation needs the root template to start. If you do not include the root template, 
-     a root template built into the XSLT processor will be automatically used and this automatic one generally 
-     lists all the data in the XML document in plain text. -->
-<!-- Inside the <xsl:template match=”/”> and </xsl:template> write the rules to output your XML data and 
-     if you want to have the output in HTML format, you will need to add the head, title, body, and other 
-     necessary HTML tags. By the way, you can even add CSS and JavaScript! -->
+<!-- Every XSLT transformation needs the root template to start. If you do not include the root template,  a root template built into the XSLT processor will be automatically used and this automatic one generally  lists all the data in the XML document in plain text. -->
+<!-- Inside the <xsl:template match=”/”> and </xsl:template> write the rules to output your XML data and if you want to have the output in HTML format, you will need to add the head, title, body, and other  necessary HTML tags. By the way, you can even add CSS and JavaScript! -->
 <xsl:template match="/">
 
   <html><head><title>Books Styled</title></head>
   <!-- We are including inline CSS using the style attribute in the <h1> element and in the <img> element. -->
   <body><h1 style="font-style:italic; color:red;">Books</h1>
-  <!-- We NEED to use the forward slash (/) to close the <img> self-closed tag because we are following 
-       the XML rules that every tag needs a closing (even when we are writing XSLT files). -->
+  <!-- We NEED to use the forward slash (/) to close the <img> self-closed tag because we are following the XML rules that every tag needs a closing (even when we are writing XSLT files). -->
   <p> <img src="books.jpg" alt="3 red books piled" width="100" height="100"
 style="float:left; margin-right: 10px;"/> The <xsl:value-of
 <!-- We are also including other known HTML tags such as the <strong> to have the data written in bold.  -->
