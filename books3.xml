@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="bookloopfilter.xsl"?>
+
+<!-- Now you only see two books being presented. if you pay attention you will notice that the language attribute is being coded 
+    directly inside the book element, not in the name element as it was in books2.xml. Then, if you pay attention the selection 
+    expression in bookloopfilter.xsl is done in the xsl:for-each loop rule as: <xsl:for-each select="books"/book[@language='English']"> -->
+
+<!-- Once I'm pointing to the book node, the filter is being done using the language attribute that has the value of "English"
+     (note that the double quote is not used around the English text in the expression of the filter to not make confusion with the 
+     double quotes around the whole value of select). That's why now you only see the books that have the attribute language as 
+     language="English"! -->
 <books>
    <book language="English">
       <name>Intro to XML</name>
@@ -16,4 +25,5 @@
 	  <author>Albert Jones</author>
 	  <year>2010</year>
    </book>
+
 </books>
