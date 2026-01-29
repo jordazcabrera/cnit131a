@@ -15,6 +15,7 @@
      <html>
           <head>
                <title>Books Styled</title>
+                <link rel="icon" href="data:," />
           </head>
           
           <body>
