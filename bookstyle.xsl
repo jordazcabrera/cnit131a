@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- The first line of any XSLT file is exactly the same first line an XML document has -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
 <xsl:output method="html"/>
