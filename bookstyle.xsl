@@ -3,9 +3,11 @@
      <!-- the line below specifies the namespace for the style sheet and also declares its prefix (xsl right after xmlns:) -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
+     <!-- Before you apply the rules below, specify that you want your output in HTML format. -->
 <xsl:output method="html"/>
-     <!-- transformation begins by processing the root template that needs to exist in every XSLT. The root template is defined with <xsl:template match="/"> -->
-     <!-- the root template defines the set of rules apply the root node of the XML document. The forward slash (/) matches the root node of the XML document. -->
+     <!-- transformation begins by processing the root template that needs to exist in every XSLT. The root template defines the set of rules apply 
+          to the root node of the XML document. The forward slash (/) matches the root node of the XML document. If you want to have the output in 
+          HTML format, you will need to add the head, title, body, and other necessary HTML tags. You can even add CSS and JavaScript!-->
      <!-- Every XSLT transformation needs the root template to start. If you do not include the root template, a root template built into the XSLT processor 
           will be automatically used and this automatic one generally lists all the data in the XML document in plain text. -->
 <xsl:template match="/">
