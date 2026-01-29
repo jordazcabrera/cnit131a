@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "studentstemplates.xsl"?> 
+<class> 
+   <student nbr = "W0023139"> 
+      <firstname>Deborah</firstname> 
+      <lastname>Kad</lastname> 
+      <nickname>Deb</nickname> 
+   </student> 
+   <student nbr = "W0134265"> 
+      <firstname>Adash</firstname> 
+      <lastname>Gupta</lastname> 
+      <nickname>Adash</nickname> 
+   </student> 
+   <student nbr = "W1923411"> 
+      <firstname>Stephanie</firstname> 
+      <lastname>Singh</lastname> 
+      <nickname>Steph</nickname> 
+   </student> 
+</class>
