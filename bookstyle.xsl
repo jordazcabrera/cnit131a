@@ -11,16 +11,15 @@
 <!-- Inside the <xsl:template match=”/”> and </xsl:template> write the rules to output your XML data and if you want to have the output in HTML format, you will need to add the head, title, body, and other  necessary HTML tags. By the way, you can even add CSS and JavaScript! -->
 <xsl:template match="/">
 
-  <html><head><title>Books Styled</title></head>
-  <body><h1 style="font-style:italic; color:red;">Books</h1>
-  
-  <p> <img src="books.jpg" alt="3 red books piled" width="100" height="100"
-           
+     <html><head><title>Books Styled</title></head>
+     <body><h1 style="font-style:italic; color:red;">Books</h1>
+          
+     <p> <img src="books.jpg" alt="3 red books piled" width="100" height="100"
 style="float:left; margin-right: 10px;"/> The <xsl:value-of
 select="books/book/name"/> was written by <strong><xsl:value-of
 select="books/book/author"/></strong></p>
 
-  </body></html>
+     </body></html>
   
 </xsl:template>
 </xsl:stylesheet>
