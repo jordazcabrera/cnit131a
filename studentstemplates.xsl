@@ -29,7 +29,7 @@
 		<!--Each template is defining how the content of the specific node will be displayed and whenever necessary, within that code, 
 		    you can reuse the template(s) created. -->
 	  <!-- <xsl:apply-templates select = "@nbr" /> <br /> -->
-	  <xsl:apply-templates select = "@nbr" /> (<xsl:apply-templates select = "nickname"/>) <br />
+	  <xsl:apply-templates select = "@nbr" /> (<xsl:apply-templates select = "nickname" />) <br />
       <xsl:apply-templates select = "firstname" /> <br />
       <xsl:apply-templates select = "lastname" /> <br />
       <xsl:apply-templates select = "nickname" /> 
@@ -62,6 +62,7 @@
 	
 
 </xsl:stylesheet>
+
 
 
 
