@@ -8,7 +8,7 @@
 	     to create different sets of processing rules that can be applied to different parts of the XML document.
          One of the main benefits of using templates is that you can reuse a template for other nodes meaning that you can 
 	     create a template and simply apply it whenever necessary. -->
-	<!-- this xsl:template is what we have been using so far (defining the start of an HTML document, etc.) -->
+	<!-- from line 12-20 is what we have been using so far (defining the start of an HTML document, etc.) -->
    <xsl:template match = "/"> 
       <html> 
 	     <head><title>Students</title></head>
@@ -19,8 +19,15 @@
       </html> 
    </xsl:template>  
 	
+	<!-- from line 24-31 is different from what we have been using instead of using <xsl:value-of select=.../> to get the value 
+	     of a certain node, we are using apply-templates. -->
    <xsl:template match = "class/student"> 
       <p>
+	  <!-- Notice that the <xsl:template match = "class/student"> is formed by other templates - it has 4 xsl:apply-templates instructions. 
+		   The first one, you can select an attribute just need to use the @ symbol in front of the name of the attribute!!!.
+		   The second one will be firstname, lastname and nickname. Each one of those refer to their respective templates that you see below.-->
+		<!--Each template is defining how the content of the specific node will be displayed and whenever necessary, within that code, 
+		    you can reuse the template(s) created. -->
 	  <xsl:apply-templates select = "@nbr" /> <br />
       <xsl:apply-templates select = "firstname" /> <br />
       <xsl:apply-templates select = "lastname" /> <br />
@@ -54,3 +61,4 @@
 	
 
 </xsl:stylesheet>
+
