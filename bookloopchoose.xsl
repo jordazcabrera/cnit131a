@@ -29,6 +29,8 @@
          <tr><td><xsl:value-of select="name"/></td>
 		 <td><xsl:value-of select="author"/></td>
 		 <xsl:choose>
+			 <!-- When you use xsl:choose, you can add more than one xsl:when condition but once a condition is found to be true, 
+			      all the remaining conditions will be ignored only the action of the first true condition will be processed! -->
 		    <xsl:when test="year != '-'">
    		       <td><xsl:value-of select="year"/></td>
 			</xsl:when>
@@ -36,6 +38,8 @@
 			   <td>unknown</td>
 			</xsl:otherwise>
 	     </xsl:choose>
+		 <!-- The closing of the table row </tr> had to be put AFTER the xsl:choose rule finished otherwise you would create an error
+			  in the parsing of the code as you would have two closing </tr> tags having only one opening <tr> tag opened! -->
 		 </tr>
 	  </xsl:if>
    </xsl:for-each>   
@@ -48,3 +52,4 @@
 </xsl:template>
 
 </xsl:stylesheet>
+
