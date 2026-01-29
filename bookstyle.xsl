@@ -16,7 +16,7 @@
 <xsl:template match="/">
 
   <html><head><title>Books Styled</title></head>
-  <!-- We are including inline CSS using the style attribute in the <h1> element and in the <img> element.
+  <!-- We are including inline CSS using the style attribute in the <h1> element and in the <img> element. -->
   <body><h1 style="font-style:italic; color:red;">Books</h1>
   <!-- We NEED to use the forward slash (/) to close the <img> self-closed tag because we are following 
        the XML rules that every tag needs a closing (even when we are writing XSLT files). -->
