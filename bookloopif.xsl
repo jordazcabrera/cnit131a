@@ -26,6 +26,8 @@
 	   </tr>
    
    <xsl:for-each select="books/book">
+	   <!-- The xsl:if instruction here only allows one condition and one resulting action. But you can use xsl:choose if you want to test 
+	        different conditions and have the action according to each condition. see books4.xml and booksloopchoose.xsl-->
       <xsl:if test="name[@language='English']">
          <tr>
 			 <td><xsl:value-of select="name"/></td>
@@ -42,3 +44,4 @@
 </xsl:template>
 
 </xsl:stylesheet>
+
