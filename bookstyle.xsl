@@ -16,11 +16,12 @@
      <body><h1 style="font-style:italic; color:red;">Books</h1>
           
      <p> <img src="books.jpg" alt="3 red books piled" width="100" height="100"
-style="float:left; margin-right: 10px;"/> The <xsl:value-of
-select="books/book/name"/> was written by <strong><xsl:value-of
-select="books/book/author"/></strong></p>
+style="float:left; margin-right: 10px;"/> The <xsl:value-of select="books/book/name"/> was written by <strong><xsl:value-of
+select="books/book/author"/></strong>
+     </p>
 
-     </body></html>
+     </body>
+     </html>
   
 </xsl:template>
 </xsl:stylesheet>
