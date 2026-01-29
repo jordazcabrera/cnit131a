@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
 <xsl:output method="html"/>
+     <!-- transformation begins by processing the root template that needs to exist in every XSLT. The root template is defined with <xsl:template match="/"> -->
 <xsl:template match="/">
 
      <html><head><title>Books Styled</title></head>
