@@ -5,6 +5,9 @@
 
 <xsl:output method="html"/>
      <!-- transformation begins by processing the root template that needs to exist in every XSLT. The root template is defined with <xsl:template match="/"> -->
+     <!-- the root template defines the set of rules apply the root node of the XML document. The forward slash (/) matches the root node of the XML document. -->
+     <!-- Every XSLT transformation needs the root template to start. If you do not include the root template, a root template built into the XSLT processor 
+          will be automatically used and this automatic one generally lists all the data in the XML document in plain text. -->
 <xsl:template match="/">
 
      <html><head><title>Books Styled</title></head>
