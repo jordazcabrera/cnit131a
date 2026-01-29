@@ -15,6 +15,8 @@
      <html>
           <head>
                <title>Books Styled</title>
+               <!-- Because I reused this page/file, it carried over the "favicon.ico" image. this line is saying don't use it. 
+                   notice "/" at the end. it needs it becasue this is XML not HTML. if HTML, it does not need the "/". -->
                 <link rel="icon" href="data:," />
           </head>
           
