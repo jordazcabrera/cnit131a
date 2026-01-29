@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookloopfilter.xsl"?>
+<books>
+   <book language="English">
+      <name>Intro to XML</name>
+	  <author>Joseph Smith</author>
+	  <year>2004</year>
+   </book>
+   <book language="Russian">
+      <name>XML and CSS</name>
+	  <author>Lidia Juniper</author>
+	  <year>2003</year>
+   </book>
+   <book language="English">
+      <name>XML vs JSON</name>
+	  <author>Albert Jones</author>
+	  <year>2010</year>
+   </book>
+</books>
