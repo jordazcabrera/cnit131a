@@ -17,7 +17,7 @@
   <!-- We NEED to use the forward slash (/) to close the <img> self-closed tag because we are following the XML rules that every tag needs a closing (even when we are writing XSLT files). -->
   <p> <img src="books.jpg" alt="3 red books piled" width="100" height="100"
 style="float:left; margin-right: 10px;"/> The <xsl:value-of
-<!-- We are also including other known HTML tags such as the <strong> to have the data written in bold.  -->
+<!-- We are also including other known HTML tags such as the <strong> to have the data written in bold. -->
 select="books/book/name"/> was written by <strong><xsl:value-of
 select="books/book/author"/></strong></p>
 
