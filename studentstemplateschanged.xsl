@@ -14,14 +14,19 @@
 	     <head><title>Students</title></head>
          <body> 
             <h1 style="text-align:center; color:red;">Students</h1> 
-            <xsl:apply-templates select = "class/student" /> 
+			 <!-- You can include an xsl:sort element in the xsl:apply templates. -->
+			 <!-- The modification was to sort the data by the content of lastname node and, as we are including the xsl:sort instruction, 
+			      the xsl:apply-templates will not be a self-closed tag anymore and that's the reason we removed the forward slash (/) 
+			      from the initial self-closed tag, and added the closing </xsl:apply-templates> tag and the xsl:sort between. -->
+            <xsl:apply-templates select = "class/student"> 
+				<xsl:sort select="lastname" />
+			</xsl:apply-templates>
          </body> 
       </html> 
    </xsl:template>  
 	
 	<!-- This is different from what we have been using instead of using <xsl:value-of select=.../> to get the value 
 	     of a certain node, we are using apply-templates. -->
-      You can include an element in the
    <xsl:template match = "class/student"> 
       <p>
 	  <!-- Notice that the <xsl:template match = "class/student"> is formed by other templates - it has 4 xsl:apply-templates instructions. 
