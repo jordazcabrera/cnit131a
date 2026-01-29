@@ -11,6 +11,8 @@
 style="float:left; margin-right: 10px;"/> The <xsl:value-of
 select="books/book/name"/> was written by <strong><xsl:value-of
 select="books/book/author"/></strong></p>
+
+  </body></html>
   
 </xsl:template>
 </xsl:stylesheet>
