@@ -22,6 +22,10 @@
    <xsl:for-each select="books/book">
 	   <!-- The nodes are presented in the order they were coded in the XML document. If you want to present them in a different order, 
 	        then you will need to use the xsl:sort instruction. Notice that this instruction is a self-closed tag. -->
+	   <!-- Here are the parameters you see in the xsl:sort: select - as always to select the element/node that the sort will be applied to
+	       (in the case here, the sort will be applied to the name node); order the default is the ascending order and in the case shown 
+	       the content of the name node will be sorted in a descending order; data-type the default is text. There would be no need to type 
+	       data-type="text", but this is another parameter you can use and if you were dealing with numbers you would put data-type="number". -->
       <xsl:sort select="name" order="descending" />
          <tr>
 			 <td><xsl:value-of select="name"/></td>
@@ -35,3 +39,4 @@
 </xsl:template>
 
 </xsl:stylesheet>
+
