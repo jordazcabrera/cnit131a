@@ -15,6 +15,8 @@
      <html>
           <head>
                <title>Books Styled</title>
+               <!-- Becaseu i recused this page/file, it carried over the "favicon.ico" image. this line is saying don't use it -->
+               <link rel="icon" href="data:,">
           </head>
 
           <!-- We are including inline CSS using the style attribute in the <h1> element and in the <img> element.
