@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-     <!-- The first line of any XSLT file is exactly the same first line an XML document has -->
-     <!-- the line below specifies the namespace for the style sheet and also declares its prefix (xsl right after xmlns:) -->
+<!-- The first line of any XSLT file is exactly the same first line an XML document has -->
+<!-- the line below specifies the namespace for the style sheet and also declares its prefix (xsl right after xmlns:) -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
      <!-- Before you apply the rules below, specify that you want your output in HTML format. -->
