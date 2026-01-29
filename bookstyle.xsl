@@ -1,5 +1,5 @@
-<!-- The first line of any XSLT file is exactly the same first line an XML document -->
 <?xml version="1.0"?>
+<!-- The first line of any XSLT file is exactly the same first line an XML document -->
 <!-- specifies the namespace for the style sheet and also declares its prefix (xsl right after xmlns:) -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
