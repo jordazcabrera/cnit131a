@@ -45,7 +45,13 @@
         select of xsl:value-of to point directly to the child node we want to select inside the book node (the name and the author nodes). 
         The other inclusion was the closing to close </xsl:for-each> the loop. -->
    <xsl:for-each select="books/book">
-   <p>The <xsl:value-of select="name"/> was written by <strong><xsl:value-of select="author"/></strong>
+   <p>
+        The 
+        <xsl:value-of select="name"/> 
+        was written by 
+        <strong>
+             <xsl:value-of select="author"/>
+        </strong>
    </p>
    </xsl:for-each>   
    
@@ -55,3 +61,4 @@
 </xsl:template>
 
 </xsl:stylesheet>
+
