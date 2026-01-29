@@ -19,7 +19,7 @@
       </html> 
    </xsl:template>  
 	
-	<!-- from line 24-31 is different from what we have been using instead of using <xsl:value-of select=.../> to get the value 
+	<!-- This is different from what we have been using instead of using <xsl:value-of select=.../> to get the value 
 	     of a certain node, we are using apply-templates. -->
    <xsl:template match = "class/student"> 
       <p>
@@ -61,4 +61,5 @@
 	
 
 </xsl:stylesheet>
+
 
