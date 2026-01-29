@@ -4,12 +4,25 @@
 <xsl:output method="html"/>
 
 <xsl:template match="/">
-   <html><head><title>Books Styled</title><style>table, td, th { border: 1px solid red; } td, th { padding: 5px; }</style></head>
-   <body><h1 style="font-style:italic; color:red;">Books</h1>
+   <html>
+	   <head>
+		   <title>Books Styled</title><style>table, td, th { border: 1px solid red; } td, th { padding: 5px; }</style>
+	   </head>
+	   
+   <body>
+	   <h1 style="font-style:italic; color:red;">Books
+	   </h1>
 
-   <img src="books.jpg" alt="3 red books piled" width="100" height="100" style="float:left; margin-right: 10px;"/>
+   <img src="books.jpg" 
+	    alt="3 red books piled" 
+	   width="100" height="100" 
+	   style="float:left; margin-right: 10px;"/>
    
-   <table><tr><th>Title of the Book</th><th>Author</th><th>Year</th></tr>
+   <table>
+	   <tr>
+		   <th>Title of the Book</th><th>Author</th>
+		   <th>Year</th>
+	   </tr>
    
    <xsl:for-each select="books/book">
       <xsl:if test="name[@language='English']">
@@ -29,6 +42,9 @@
    
    </table>
    
-   </body></html>
+   </body>
+   </html>
+	
 </xsl:template>
+
 </xsl:stylesheet>
