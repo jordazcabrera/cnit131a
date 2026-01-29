@@ -1,6 +1,14 @@
 <?xml version = "1.0" encoding = "UTF-8"?> 
 <xsl:stylesheet version = "1.0" 
    xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">   
+
+	<!-- We know that the root template -xsl:template is the first thing processed in any XSLT style sheet document. 
+	     The template is the set of rules that will be applied to the root node of the XML document. 
+	     XSTL allows you to create more templates you do not need to have only the root template. This feature allows you
+	     to create different sets of processing rules that can be applied to different parts of the XML document.
+         One of the main benefits of using templates is that you can reuse a template for other nodes meaning that you can 
+	     create a template and simply apply it whenever necessary. -->
+	<!-- this xsl:template is what we have been using so far (defining the start of an HTML document, etc.) -->
    <xsl:template match = "/"> 
       <html> 
 	     <head><title>Students</title></head>
@@ -10,7 +18,7 @@
          </body> 
       </html> 
    </xsl:template>  
-
+	
    <xsl:template match = "class/student"> 
       <p>
 	  <xsl:apply-templates select = "@nbr" /> <br />
@@ -44,4 +52,5 @@
       </span> 
    </xsl:template>  
 	
+
 </xsl:stylesheet>
