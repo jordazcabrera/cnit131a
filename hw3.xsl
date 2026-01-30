@@ -70,18 +70,17 @@
           <!-- Loop over each Client element inside Accounts -->
           <xsl:for-each select="Accounts/Client">
             <tr>
-              <!-- Full name -->
               <td>
                 <xsl:value-of select="Name/First"/>
                 <xsl:text> </xsl:text>
                 <xsl:value-of select="Name/Last"/>
               </td>
-
-              <!-- Phone number -->
-              <td><xsl:value-of select="Phone"/></td>
-
-              <!-- Email -->
-              <td><xsl:value-of select="E-mail"/></td>
+              <td>
+                <xsl:value-of select="Phone"/>
+              </td>
+              <td>
+                <xsl:value-of select="E-mail"/>
+              </td>
 
               <!-- Account total with conditional formatting -->
               <td class="right">
