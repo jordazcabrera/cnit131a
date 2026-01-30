@@ -26,7 +26,8 @@
             padding: 8px;
           }
 
-          /* Column-specific widths using classes */
+          /* Column-specific widths using classes. technically i don't need it but i may want Name column to never exceed 120px.
+             Also. it is good to use because diff browsers sometimes sizes out auto-layout differently*/
           .col-name { width: 120px; }
           .col-phone { width: 130px; }
           .col-email { width: 200px; }
