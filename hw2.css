@@ -1,0 +1,30 @@
+/* Entire document background */
+catalog {
+    background-color: lightgray;
+    display: block;
+    padding: 20px;
+}
+
+/* Each book displayed on its own line */
+book {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Odd-numbered books */
+book:nth-child(odd) {
+    background-color: lightblue;
+}
+
+/* Book titles styling */
+title {
+    display: block;
+    font-weight: bold;
+    color: red;
+}
+
+/* Optional formatting for readability */
+author, publisher {
+    display: block;
+}
