@@ -54,10 +54,10 @@
         <table>
           <!-- Table header row -->
           <tr>
-            <th>name</th>
-            <th>phone</th>
-            <th>email</th>
-            <th>account_total</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Account Total</th>
           </tr>
 
           <!-- Loop over each Client element inside Accounts -->
