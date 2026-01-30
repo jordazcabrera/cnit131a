@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cards Demo</title>
+
+    <!-- ===== CSS ===== -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* FLEXBOX CONTAINER (COLUMNS) */
+        .card-container {
+            display: flex;              /* turns children into columns */
+            gap: 20px;                  /* space between columns */
+            flex-wrap: wrap;            /* allows wrapping on small screens */
+        }
+
+        /* CLICKABLE CARD */
+        .card {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-decoration: none;      /* removes underline from link */
+            color: black;
+            overflow: hidden;           /* keeps image inside rounded corners */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card-content {
+            padding: 10px;
+        }
+
+        /* BUTTON STYLE */
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Cards</h1>
+    <p>Each card is an image + text wrapped in a link.</p>
+
+    <!-- ===== FLEXBOX COLUMNS ===== -->
+    <div class="card-container">
+
+        <!-- Card 1 -->
+        <a href="https://example.com" target="_blank" class="card">
+            <img src="https://via.placeholder.com/200x120" alt="Example">
+            <div class="card-content">
+                <h3>Example</h3>
+                <p>Go to example.com</p>
+            </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="https://openai.com" target="_blank" class="card">
+            <img src="https://via.placeholder.com/200x120" alt="OpenAI">
+            <div class="card-content">
+                <h3>OpenAI</h3>
+                <p>Visit OpenAI</p>
+            </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#" class="card" id="specialCard">
+            <img src="https://via.placeholder.com/200x120" alt="Interactive">
+            <div class="card-content">
+                <h3>Interactive</h3>
+                <p>Click the button below</p>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- ===== INTERACTIVE EXAMPLE ===== -->
+    <button id="myButton">Click me</button>
+    <p id="output"></p>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Find elements by their IDs
+        const button = document.getElementById("myButton");
+        const output = document.getElementById("output");
+
+        // Run this code when the button is clicked
+        button.addEventListener("click", function () {
+            output.textContent = "Button clicked! JavaScript is working 🎉";
+        });
+    </script>
+
+</body>
+</html>
