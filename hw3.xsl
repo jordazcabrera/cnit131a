@@ -8,38 +8,45 @@
       <head>
         <title>List of Clients</title>
 
-        <!-- CSS styles to format the table and text -->
+        <!-- CSS styles for table and formatting -->
         <style>
-          /* Table container with blue thick border and spacing */
+          /* Table container with blue border, spacing, and fixed layout */
           table {
             border-collapse: separate;
             border-spacing: 4px;
             border: 2px solid blue;
             width: 90%;
+            table-layout: fixed; /* ensures column widths are respected */
           }
 
-          /* Header cells with blue border, bold text, and centered content */
-          th {
+          /* Header and data cells */
+          th, td {
             border: 2px solid blue;
             padding: 8px;
+            white-space: nowrap;       /* prevents text from wrapping */
+            overflow: hidden;
+            text-overflow: ellipsis;   /* adds ... if content is too long */
+          }
+
+          /* Set general column widths */
+          table tr th:nth-child(1), table tr td:nth-child(1) { width: 120px; }  /* Name */
+          table tr th:nth-child(2), table tr td:nth-child(2) { width: 130px; }  /* Phone */
+          table tr th:nth-child(3), table tr td:nth-child(3) { width: 200px; }  /* Email */
+          table tr th:nth-child(4), table tr td:nth-child(4) { width: 110px; }  /* Account Total */
+
+          /* Header row formatting */
+          th {
             font-weight: bold;
             text-align: center;
           }
 
-          /* Data cells with blue border and padding */
-          td {
-            border: 2px solid blue;
-            padding: 8px;
-          }
-
-          /* Class to right-align text (used for account totals) */
+          /* Right-align for account total column */
           .right {
             text-align: right;
           }
 
-          /* Class for account totals less than or equal to 80000:
-             red text and bold font */
-          .low {
+          /* Styling for account totals ≤ 80000 */
+          .lessthan {
             color: red;
             font-weight: bold;
           }
@@ -47,10 +54,10 @@
       </head>
 
       <body>
-        <!-- Main heading -->
+        <!-- Page Heading -->
         <h1>List of Clients</h1>
 
-        <!-- Clients table -->
+        <!-- Clients Table -->
         <table>
           <!-- Table header row -->
           <tr>
@@ -63,7 +70,7 @@
           <!-- Loop over each Client element inside Accounts -->
           <xsl:for-each select="Accounts/Client">
             <tr>
-              <!-- Display full name: First + Last -->
+              <!-- Full name -->
               <td>
                 <xsl:value-of select="Name/First"/>
                 <xsl:text> </xsl:text>
@@ -76,16 +83,16 @@
               <!-- Email -->
               <td><xsl:value-of select="E-mail"/></td>
 
-              <!-- Account total with special formatting -->
+              <!-- Account total with conditional formatting -->
               <td class="right">
                 <xsl:choose>
-                  <!-- If account total ≤ 80000, display in red and bold -->
+                  <!-- Red and bold if ≤ 80000 -->
                   <xsl:when test="Account_Total &lt;= 80000">
-                    <span class="low">
+                    <span class="lessthan">
                       $<xsl:value-of select="Account_Total"/>
                     </span>
                   </xsl:when>
-                  <!-- Otherwise, display normally with dollar sign -->
+                  <!-- Normal formatting otherwise -->
                   <xsl:otherwise>
                     $<xsl:value-of select="Account_Total"/>
                   </xsl:otherwise>
@@ -93,8 +100,8 @@
               </td>
             </tr>
           </xsl:for-each>
-        </table>
 
+        </table>
       </body>
     </html>
   </xsl:template>
