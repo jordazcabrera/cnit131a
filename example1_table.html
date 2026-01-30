@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding: supports most languages & symbols -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the layout work well on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in the browser tab -->
+    <title>HTML Structure Demo</title>
+
+    <!-- ===== CSS GOES HERE ===== -->
+    <!-- Internal CSS (inside <style>) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 200px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <!-- External CSS (example) -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+
+    <!-- ===== HEADINGS & TEXT ===== -->
+    <h1>Welcome to My Page</h1>
+    <p>This page demonstrates basic HTML elements.</p>
+
+    <!-- ===== LINKS ===== -->
+    <h2>Links</h2>
+
+    <!-- Basic link -->
+    <a href="https://www.example.com">Visit Example.com</a>
+
+    <br><br>
+
+    <!-- Link that opens in a new tab -->
+    <a href="https://www.example.com" target="_blank">
+        Open Example.com in a new tab
+    </a>
+
+    <!-- ===== IMAGES ===== -->
+    <h2>Images</h2>
+
+    <!-- Image from the web -->
+    <img src="https://via.placeholder.com/200" alt="Placeholder image">
+
+    <!-- Image from your local folder -->
+    <!-- <img src="images/photo.jpg" alt="My photo"> -->
+
+    <!-- ===== TABLE (columns & rows) ===== -->
+    <h2>Table Example</h2>
+
+    <table>
+        <tr>
+            <!-- Table headers -->
+            <th>Name</th>
+            <th>Role</th>
+            <th>Experience</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Developer</td>
+            <td>5 years</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Designer</td>
+            <td>3 years</td>
+        </tr>
+    </table>
+
+    <!-- ===== JAVASCRIPT GOES HERE ===== -->
+    <!-- Usually placed at the bottom so the page loads first -->
+    <script>
+        // This runs when the page loads
+        console.log("JavaScript is working!");
+
+        // Example: show a message when the page loads
+        alert("Welcome to the page!");
+    </script>
+
+    <!-- External JavaScript file (example) -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
