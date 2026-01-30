@@ -3,7 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>CNIT-131A Assignments</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        ul {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            background: #ffffff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        a {
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,18 +48,27 @@
 
     <ul>
         <li>
-            <a href="hw1.html">Homework 1</a><br>
+            <a href="cnit131ahw1.html">Homework 1</a><br>
             Introduction to XML basics and structure.
+            <p>
+                XML is used to store data using tags. It has one main root element, and all tags must be properly opened and closed. Attributes can be used to add extra information.
+            </p>
         </li>
 
         <li>
-            <a href="hw2.html">Homework 2</a><br>
+            <a href="hw2.xml">Homework 2</a><br>
             Working with XML and JSON files and validating data.
+            <p>
+                XML and JSON store data, and validating ensures the file has the correct structure.
+            </p>
         </li>
 
-        <li>
-            <a href="#">Homework 3</a><br>
-            Learning how to transform XML using XSLT.
+         <li>
+            <a href="hw3.xml">Homework 3</a><br>
+            XSL Transformation.
+            <p>
+               XSLT does not modify the original XML document. Instead, it reads the XML and creates a new output document based on transformation rules defined in the stylesheet.
+            </p>
         </li>
     </ul>
 
