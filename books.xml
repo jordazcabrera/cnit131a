@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF8"?>
+<books>
+   <book>
+      <name>Intro to XML</name>
+	  <author>Joseph Smith</author>
+	  <year>2004</year>
+   </book>
+   <book>
+      <name>XML and CSS</name>
+	  <author>Lidia Juniper</author>
+	  <year>2003</year>
+   </book>
+   <book>
+      <name>XML vs JSON</name>
+	  <author>Albert Jones</author>
+	  <year>2010</year>
+   </book>
+</books>
