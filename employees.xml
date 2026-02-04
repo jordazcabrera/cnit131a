@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type = "text/xsl" href = "newemployees.xsl"?> 
+<employees>
+   <employee>
+      <firstname>Douglas</firstname>
+	  <lastname>Stuart</lastname>
+	  <hired>2005</hired>
+	  <salary>120000</salary>
+	  <position>Programmer</position>
+   </employee>
+   <employee>
+      <firstname>Laura</firstname>
+	  <lastname>Fonseca</lastname>
+	  <hired>2010</hired>
+	  <salary>55000</salary>
+	  <position>Assistant</position>
+   </employee>
+   <employee>
+      <firstname>Wallace</firstname>
+	  <lastname>McLean</lastname>
+	  <hired>2001</hired>
+	  <salary>125000</salary>
+	  <position>Programmer</position>
+   </employee>
+   <employee>
+      <firstname>Zumara</firstname>
+	  <lastname>Arniston</lastname>
+	  <hired>2000</hired>
+	  <salary>150000</salary>
+	  <position>Manager</position>
+   </employee>
+</employees>
