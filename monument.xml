@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type = "text/xsl" href = "monumenthistory.xsl"?> 
+<monuments>
+   <monument>
+      <name language="English">A Man</name>
+      <name language="Spanish">Un Hombre</name>
+	  <pic file="man.jpg" w="120" h="120" />
+      <history>
+         <yearbuilt era="BC">300</yearbuilt>
+         <yeardestroy era="BC">240</yeardestroy>
+         <destroyedby>tornado</destroyedby>
+      </history>
+   </monument>
+   <monument>
+      <name language="English">The Face of a Woman</name>
+      <name language="Spanish">El rostro de una mujer</name>
+	  <pic file="womanface.jpg" w="120" h="120" />
+      <history>
+         <yearbuilt era="BC">120</yearbuilt>
+         <yeardestroy era="BC">0</yeardestroy>
+         <destroyedby>-</destroyedby>
+      </history>
+   </monument>
+   <monument>
+      <name language="English">The Moon God</name>
+      <name language="Spanish">El dios the la luna</name>
+	  <pic file="moongod.jpg" w="120" h="120" />
+      <history>
+         <yearbuilt era="AC">1320</yearbuilt>
+         <yeardestroy era="AC">1640</yeardestroy>
+         <destroyedby>earthquake</destroyedby>
+      </history>
+   </monument>
+</monuments>
