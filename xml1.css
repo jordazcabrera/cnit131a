@@ -1,0 +1,11 @@
+Accounts { background-color: #eeeeee; font-family: Verdana, Times, sans-serif; }
+
+Client, Name, Address, Phone, Email, Account_Total { display: block; }
+
+Name { font-weight: bold; font-style:italic; font-size: 1.3em;}
+
+Address { font-style:italic; }
+
+Client:nth-child(even) { background-color: skyblue; }
+
+Account_Total { font-weight: bold; color: red; }
