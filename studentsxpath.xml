@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "studentsxpath.xsl"?>
+<students>
+   <!-- Comment: This is the list of our students -->
+   <student studentID = "10023">
+      <firstname>Lucas</firstname>
+      <lastname>Kad</lastname>
+      <nickname>Luke</nickname>
+   </student>
+   <student studentID = "10026">
+      <firstname>Alison</firstname>
+      <lastname>Schmidt</lastname>
+      <nickname>Ali</nickname>
+   </student>
+   <student studentID = "10077">
+      <firstname>Jasmine</firstname>
+      <lastname>August</lastname>
+      <nickname>Jas</nickname>
+   </student>
+</students>
