@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:root xmlns:ns="http://www.w3.org/1999/XSL/Format">
+  <!-- first part overall structure -->
+
+  <ns:layout-master-set>
+    <ns:simple-page-master master-name="monuments">
+      <ns:region-body/>
+    </ns:simple-page-master>
+  </ns:layout-master-set>
+
+  <!-- second part page content -->
+
+  <ns:page-sequence master-reference="monuments">
+    <ns:flow flow-name="xsl-region-body">
+      <ns:block> A Man </ns:block>
+    </ns:flow>
+  </ns:page-sequence>
+</ns:root>

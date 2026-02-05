@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:root xmlns:ns="http://www.w3.org/1999/XSL/Format">
+  <!-- first part overall structure -->
+
+  <ns:layout-master-set>
+    <ns:simple-page-master master-name="monuments">
+      <ns:region-body/>
+    </ns:simple-page-master>
+  </ns:layout-master-set>
+
+  <!-- second part page content -->
+
+  <ns:page-sequence master-reference="monuments">
+    <ns:flow flow-name="xsl-region-body">
+      <ns:block font-size="20px" space-after="0.2in"> A Man </ns:block>
+
+      <ns:block font-size="14px">
+        <ns:block space-after="0.1in"> This monument was built... </ns:block>
+
+        <ns:block space-after="0.1in"> A Man is called El Hombre in
+        Spanish.... </ns:block>
+      </ns:block>
+    </ns:flow>
+  </ns:page-sequence>
+</ns:root>
