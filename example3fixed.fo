@@ -4,20 +4,23 @@
   <!-- first part overall structure -->
   <fo:layout-master-set>
     <fo:simple-page-master master-name="monuments">
-      <fo:region-before extent="1in"/>
+      <!-- region-body MUST come first -->
       <fo:region-body margin="1in"/>
+      <fo:region-before extent="1in"/>
     </fo:simple-page-master>
   </fo:layout-master-set>
 
   <!-- second part page content -->
   <fo:page-sequence master-reference="monuments">
 
+    <!-- header -->
     <fo:static-content flow-name="xsl-region-before">
       <fo:block font-size="24pt" text-align="center">
         Great Monuments
       </fo:block>
     </fo:static-content>
 
+    <!-- body -->
     <fo:flow flow-name="xsl-region-body">
       <fo:block font-size="20pt" space-after="0.2in">
         A Man
