@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+  <!-- first part overall structure -->
+  <fo:layout-master-set>
+    <fo:simple-page-master master-name="monuments">
+      <fo:region-before extent="1in"/>
+      <fo:region-body margin="1in"/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+
+  <!-- second part page content -->
+  <fo:page-sequence master-reference="monuments">
+
+    <fo:static-content flow-name="xsl-region-before">
+      <fo:block font-size="24pt" text-align="center">
+        Great Monuments
+      </fo:block>
+    </fo:static-content>
+
+    <fo:flow flow-name="xsl-region-body">
+      <fo:block font-size="20pt" space-after="0.2in">
+        A Man
+      </fo:block>
+
+      <fo:block font-size="14pt">
+        <fo:block space-after="0.1in">
+          This monument was built...
+        </fo:block>
+
+        <fo:block space-after="0.1in">
+          A Man is called El Hombre in Spanish....
+        </fo:block>
+      </fo:block>
+    </fo:flow>
+
+  </fo:page-sequence>
+</fo:root>
