@@ -59,7 +59,7 @@
         </p>
 
         <!-- XPath used: Accounts/Client selects all Client nodes
-             xsl:for-each iterates through them.
+             xsl:for-each iterates through them. -->
         <p>
           These are our clients:
           <xsl:for-each select="Accounts/Client">
