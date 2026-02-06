@@ -60,7 +60,6 @@
 
         <!-- XPath used: Accounts/Client selects all Client nodes
              xsl:for-each iterates through them.
-        <!-- Uses position() and last() to format commas and ", and" correctly -->
         <p>
           These are our clients:
           <xsl:for-each select="Accounts/Client">
