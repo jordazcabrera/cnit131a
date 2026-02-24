@@ -1,4 +1,15 @@
 <?xml version = "1.0" encoding="UTF-8"?> 
+
+<!-- copy these lines from file colleges.dtd -->
+<!DOCTYPE colleges [
+<!ELEMENT colleges (college+)>
+<!ELEMENT college (#PCDATA | name | location | city | country)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+]>
+
 <colleges>
    <college>
       <name>City College of SF</name>
@@ -17,4 +28,5 @@
 	  <city>Atlanta</city>
 	  <country>United States</country>
    </college>
+
 </colleges>
