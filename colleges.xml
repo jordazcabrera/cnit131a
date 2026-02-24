@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding="UTF-8"?> 
+<colleges>
+   <college>
+      <name>City College of SF</name>
+      <location>San Francisco, CA</location>
+   </college>
+   <college>
+      College being built in Tracy, CA
+   </college>
+   <college>
+      A name has not been chosen yet
+      <city>Paris</city>
+	  <country>France</country>
+   </college>
+   <college>
+      <name>Atlanta Community College</name>
+	  <city>Atlanta</city>
+	  <country>United States</country>
+   </college>
+</colleges>
