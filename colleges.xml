@@ -1,6 +1,5 @@
 <?xml version = "1.0" encoding="UTF-8"?> 
 
-<!-- copy these lines from file colleges.dtd -->
 <!DOCTYPE colleges [
 <!ELEMENT colleges (college+)>
 <!ELEMENT college (#PCDATA | name | location | city | country)*>
@@ -30,3 +29,4 @@
    </college>
 
 </colleges>
+
