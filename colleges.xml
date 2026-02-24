@@ -1,4 +1,4 @@
-<?xml version = "1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE colleges [
 <!ELEMENT colleges (college+)>
@@ -20,13 +20,13 @@
    <college>
       A name has not been chosen yet
       <city>Paris</city>
-	  <country>France</country>
+      <country>France</country>
    </college>
    <college>
       <name>Atlanta Community College</name>
-	  <city>Atlanta</city>
-	  <country>United States</country>
+      <city>Atlanta</city>
+      <country>United States</country>
    </college>
-
 </colleges>
+
 
