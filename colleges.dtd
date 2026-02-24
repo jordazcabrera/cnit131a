@@ -1,8 +1,0 @@
-<!ELEMENT colleges (college+)>
-<!ELEMENT college (#PCDATA | name | location | city | country)*>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT location (#PCDATA)>
-<!ELEMENT city (#PCDATA)>
-<!ELEMENT country (#PCDATA)>
-
-
