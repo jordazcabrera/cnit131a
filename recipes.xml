@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+  <description>Some recipes used in the XML tutorial. </description>
+
+  <recipe>
+    <title>Beef Parmesan with Garlic Pasta</title>
+
+    <ingredient amount="1.5" name="beef in cubes" unit="pound"/>
+
+    <ingredient amount="1" name="onion, sliced thin"/>
+
+    <ingredient amount="1" name="seasoned bread crumbs" unit="cup"/>
+
+    <ingredient amount="0.5" name="parmesan cheese" unit="cup"/>
+
+    <ingredient amount="2" name="olive oil" unit="tablespoon"/>
+
+    <ingredient amount="1" name="spaghetti sauce" unit="cup"/>
+
+    <ingredient amount="12" name="pasta" unit="ounce"/>
+
+    <ingredient amount="2" name="garlic sauce" unit="teaspoon"/>
+
+    <preparation>
+      <step>Preheat oven to 375 degrees F.</step>
+
+      <step>Coat meat with the bread crumbs and parmesan cheese.</step>
+
+      <step>Heat olive oil in a large frying pan, put 1 teaspoon of the garlic
+      sauce and mix it for 3 minutes. Quick fry meat.</step>
+
+      <step>Place meat in a casserole baking dish. Place onion rings on top of
+      meat.</step>
+
+      <step>Bake at 375 degrees F for 20 to 35 minutes, depending on the
+      thickness of the meat. Sprinkle mozzarella over meat and leave in the
+      oven till bubbly.</step>
+
+      <step>Boil pasta al dente. Drain, and toss in 1 teaspoon garlic sauce.
+      For a stronger garlic taste, season with garlic powder. Top with grated
+      parmesan and parsley for color. Serve meat and sauce on top of
+      pasta!</step>
+    </preparation>
+
+    <comment>Make the meat ahead of time, and refrigerate over
+    night.</comment>
+
+    <nutrition calories="1167" carbohydrates="45" fat="23" protein="32"/>
+  </recipe>
+
+  <recipe>
+    <title>Ricotta Pie</title>
+
+    <ingredient name="filling">
+      <ingredient amount="3" name="ricotta cheese" unit="pound"/>
+
+      <ingredient amount="12" name="eggs"/>
+
+      <ingredient amount="2" name="white sugar" unit="cup"/>
+
+      <ingredient amount="2" name="vanilla extract" unit="teaspoon"/>
+
+      <ingredient amount="0.25" name="semisweet chocolate chips" unit="cup"/>
+
+      <preparation>
+        <step>Beat all the eggs, 2 cups sugar and vanilla extract together.
+        Stir in the ricotta cheese and the chocolate chips. Set aside.</step>
+      </preparation>
+    </ingredient>
+
+    <ingredient name="dough">
+      <ingredient amount="4" name="all purpose flour" unit="cup"/>
+
+      <ingredient amount="5" name="baking powder" unit="teaspoon"/>
+
+      <ingredient amount="1" name="white sugar" unit="cup"/>
+
+      <ingredient amount="0.5" name="shortening" unit="cup"/>
+
+      <ingredient amount="4" name="eggs, lightly beaten"/>
+
+      <ingredient amount="1" name="vanilla extract" unit="teaspoon"/>
+
+      <preparation>
+        <step>Combine the flour, baking powder, and 1 cup of the sugar
+        together. Cut in the shortening and mix until the mixture resembles
+        coarse crumbs. Mix in 4 of the eggs and 1 teaspoon of the vanilla.
+        Divide dough into 4 balls and chill (if needed).</step>
+      </preparation>
+    </ingredient>
+
+    <ingredient amount="*" name="milk"/>
+
+    <preparation>
+      <step>Preheat oven to 325 degrees F. Grease two deep dish pie
+      plates.</step>
+
+      <step>Roll out 2 of the balls to fit into the pie pans. Do not make the
+      crust too thick as it will expand during cooking and get too thick. Do
+      not flute the edges of the dough. Roll out the other 2 balls of dough
+      and cut each into 8 narrow strips for the top of the crust.</step>
+
+      <step>Pour the filling evenly into the pie crusts. Top each pie with 8
+      narrow strips of dough or cookie cut-outs. Brush top of pie with milk
+      for shine. Place foil on the edge of crust. </step>
+
+      <step>Bake at 325 degrees F for 20 to 30 minutes then remove foil.
+      Continue to bake for another 25 or 30 minutes or until a knife inserted
+      in the center comes out clean.</step>
+    </preparation>
+
+    <nutrition calories="349" carbohydrates="64" fat="18" protein="18"/>
+  </recipe>
+</collection>
