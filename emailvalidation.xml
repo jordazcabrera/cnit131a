@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [
+<!ELEMENT email (note)>
+<!ELEMENT note (to,from,subject,msg)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT msg (#PCDATA)>
+<!ENTITY course "CNIT 131A">
+]>
+<email>
+ <note>
+   <to>John</to>
+   <from>Judy</from>
+   <subject>Learning XML</subject>
+   <msg>I am learning XML at &course;</msg>
+ </note>
+ <note>
+   <to>Claudia</to>
+   <from>Paul</from>
+   <subject>Hi</subject>
+   <msg>Hi</msg>
+ </note>
+</email>
