@@ -1,32 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- XML declaration:
+     version="1.0" specifies the XML version.
+     encoding="UTF-8" tells the parser how characters are encoded. -->
 
 <!DOCTYPE colleges [
+<!-- DOCTYPE declaration:
+     Defines the Document Type Definition (DTD) for this XML document.
+     It describes the allowed structure and elements. -->
+
 <!ELEMENT colleges (college+)>
+<!-- The root element <colleges> must contain one or more <college> elements.
+     The + symbol means "one or more". -->
+
 <!ELEMENT college (#PCDATA | name | location | city | country)*>
+<!-- Each <college> element can contain:
+     - Parsed character data (#PCDATA) = plain text
+     - <name> element
+     - <location> element
+     - <city> element
+     - <country> element
+     The * means "zero or more" of these in any order. -->
+
 <!ELEMENT name (#PCDATA)>
+<!-- <name> can only contain text. -->
+
 <!ELEMENT location (#PCDATA)>
+<!-- <location> can only contain text. -->
+
 <!ELEMENT city (#PCDATA)>
+<!-- <city> can only contain text. -->
+
 <!ELEMENT country (#PCDATA)>
+<!-- <country> can only contain text. -->
+
 ]>
+<!-- End of DTD definition. -->
 
 <colleges>
-   <college>
-      <name>City College of SF</name>
-      <location>San Francisco, CA</location>
-   </college>
-   <college>
-      College being built in Tracy, CA
-   </college>
-   <college>
-      A name has not been chosen yet
-      <city>Paris</city>
-      <country>France</country>
-   </college>
-   <college>
-      <name>Atlanta Community College</name>
-      <city>Atlanta</city>
-      <country>United States</country>
-   </college>
-</colleges>
+   <!-- Root element that contains all college entries -->
 
+   <college>
+      <!-- First college entry -->
+      <name>City College of SF</name>
+      <!-- The name of the college -->
+      <location>San Francisco, CA</location>
+      <!-- The location of the college -->
+   </college>
+
+   <college>
+      <!-- Second college entry -->
+      College being built in Tracy, CA
+      <!-- This is plain text (#PCDATA) inside <college>,
+           allowed by the DTD definition -->
+   </college>
+
+   <college>
+      <!-- Third college entry -->
+      A name has not been chosen yet
+      <!-- Plain text describing the college -->
+      <city>Paris</city>
+      <!-- City where the college is located -->
+      <country>France</country>
+      <!-- Country where the college is located -->
+   </college>
+
+   <college>
+      <!-- Fourth college entry -->
+      <name>Atlanta Community College</name>
+      <!-- College name -->
+      <city>Atlanta</city>
+      <!-- City -->
+      <country>United States</country>
+      <!-- Country -->
+   </college>
+
+</colleges>
+<!-- End of root element -->
 
