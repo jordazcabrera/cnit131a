@@ -10,7 +10,7 @@
 </Details>
 <Quantity>20</Quantity>
 <Unit_Price>3.50</Unit_Price>
-<Loc>Made in USA</Loc>
+<Loc>&madeIn;</Loc>
 </Prod>
 
 <Prod ProdID="P1234567">
