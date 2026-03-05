@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order orderid="72345"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="order.xsd">
+  <orderperson>Janet Wilson</orderperson>
+  <shipto>
+    <name>Jordan Wilson</name>
+    <address>123 Boal Road</address>
+    <city>Los Angeles</city>
+    <country>USA</country>
+  </shipto>
+  <item>
+    <title>Garden Vases</title>
+    <note>Medium size</note>
+    <quantity>2</quantity>
+    <price>10.90</price>
+  </item>
+  <item>
+    <title>Soil Mix for Flowers</title>
+    <quantity>1</quantity>
+    <price>9.90</price>
+  </item>
+</order>
