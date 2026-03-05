@@ -1,0 +1,15 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:annotation>
+  <xs:documentation>Just a simple XML Schema for demonstration in CNIT 131A course</xs:documentation>
+</xs:annotation>  
+<xs:element name="student">
+  <xs:complexType>
+    <xs:sequence>
+	  <xs:element name="firstname" type="xs:string" />
+	  <xs:element name="lastname" type="xs:string" />
+	  <xs:element name="nickname" type="xs:string" />
+	</xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>
