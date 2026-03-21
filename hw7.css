@@ -1,0 +1,19 @@
+/* Declare namespaces */
+@namespace east "http://www.gov.org/east";
+@namespace west "http://www.gov.org/west";
+
+/* Format eastern states (default namespace) */
+east|state {
+  display: block;          /* separate line */
+  background-color: lightblue;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* Format western states */
+west|state {
+  display: block;          /* separate line */
+  background-color: lightgreen;
+  margin: 5px 0;
+  padding: 5px;
+}
