@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<students xmlns="http://www.cdasilva.info/ns/student"
+  xmlns:add="http://www.cdasilva.info/ns/address">
+  <student>
+     <name>Claudia Da Silva</name>
+	 <job>Programmer</job>
+	 <add:address>
+	   <add:number>234</add:number>
+	   <add:name>Anonymous Rd</add:name>
+	   <add:city>Distant City</add:city>
+	   <add:state>CA</add:state>
+	   <add:zipcode>99991</add:zipcode>
+	 </add:address>
+  </student>
+<students>
