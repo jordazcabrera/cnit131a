@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/HTML/1998/html4"
+      xmlns:xdc="http://www.xml.com/books">
+ <head><title>Books</title></head>
+
+ <body>
+  <xdc:book>
+
+   <xdc:title>XML: Introduction</xdc:title>
+
+   <table>
+
+    <tr>
+     <td>Author</td>
+	 <td>Price</td>
+	 <td>Pages</td>
+	</tr>
+
+    <tr>
+     <td><xdc:author>Judith Thompson</xdc:author></td>
+     <td><xdc:price>31.98</xdc:price></td>
+     <td><xdc:pages>315</xdc:pages></td>
+    </tr>
+   </table>
+
+  </xdc:book>
+ </body>
+</html>
