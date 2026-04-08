@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My title</title>
+<meta charset="UTF-8">
+<meta name="description" content="working with XML parser">
+</head>
+<body>
+
+<p id="mytext"></p>
+
+<script>
+var text, parser, xmlDoc;
+
+text = "<books><book>" +
+"<title>Title of the book</title>" +
+"<author>Claudia Da Silva</author>" +
+"</book><book>" +
+"<title>This is another book</title>" +
+"<author>Laura Smith</author>" +
+"</book></books>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("mytext").innerHTML =
+xmlDoc.getElementsByTagName("title")[1].innerHTML + " was written by " + 
+xmlDoc.getElementsByTagName("author")[1].innerHTML;
+</script>
+
+</body>
+</html>
