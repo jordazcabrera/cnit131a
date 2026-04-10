@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW8 - XQuery Report</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>XQuery Report</h1>
+
+<hr>
+
+<h2>1. Purpose and Characteristics of XQuery</h2>
+<p>
+XQuery is a query language used to retrieve and manipulate data stored in XML format.
+Its main purpose is to allow users to search, filter, and transform XML data efficiently.
+XQuery is similar to SQL, but instead of working with tables, it works with XML documents.
+</p>
+
+<p>Some key characteristics of XQuery include:</p>
+<ul>
+    <li>It uses FLWOR expressions (for, let, where, order by, return)</li>
+    <li>It uses XPath to navigate XML documents</li>
+    <li>It can filter and sort data</li>
+    <li>It can transform XML into new formats such as HTML</li>
+</ul>
+
+<hr>
+
+<h2>2. Analysis of Provided Files</h2>
+
+<h3>XML File (hw8.xml)</h3>
+<p>
+The XML file represents a bookstore containing multiple book entries organized in a hierarchical structure.
+Each book has a category attribute and includes elements such as title, author, and price.
+Some books contain multiple authors, showing that XML supports repeating elements.
+The data is divided into categories like "coding" and "children," which allows it to be easily filtered using XQuery.
+</p>
+
+<h3>XQuery File (hw8.xq)</h3>
+<p>
+The XQuery file contains a query that processes the XML data by selecting specific elements and applying conditions.
+It uses a FLWOR expression to loop through the data, filter it, and return the desired results.
+</p>
+
+<hr>
+
+<h2>3. What the XQuery Code is Doing</h2>
+<p>
+The XQuery code reads the <strong>hw8.xml</strong> file and selects all book elements within the bookstore.
+It then loops through each book and applies a condition to filter only books with a price less than 30.
+Based on the XML data, this includes books such as <em>Harry Potter</em> and <em>The Snowy Days</em>.
+The query returns only the title elements of these filtered books.
+</p>
+
+<p>
+This demonstrates how XQuery can efficiently extract specific data from XML documents,
+similar to how SQL filters rows in a database.
+</p>
+
+<hr>
+
+<h2>4. What is XQIB?</h2>
+<p>
+XQIB is a tool that allows XQuery to run directly in a web browser using JavaScript.
+It uses the MXQuery engine to execute XQuery code embedded inside HTML files.
+</p>
+
+<p>To use XQIB, you include the following script:</p>
+
+<pre>
+&lt;script src="mxqueryjs/mxqueryjs.nocache.js"&gt;&lt;/script&gt;
+</pre>
+
+<p>You can then write XQuery inside an HTML file like this:</p>
+
+<pre>
+&lt;script type="application/xquery"&gt;
+   b:alert("Hello World")
+&lt;/script&gt;
+</pre>
+
+<p>
+This allows XML data to be queried and displayed dynamically in the browser without needing a server.
+</p>
+
+<hr>
+
+<h2>Conclusion</h2>
+<p>
+Overall, XQuery is a powerful language for working with XML data.
+It allows users to search, filter, and transform structured data efficiently.
+Tools like XQIB make it possible to run XQuery directly in the browser,
+making it easier to experiment with and understand how it works.
+</p>
+
+</body>
+</html>
