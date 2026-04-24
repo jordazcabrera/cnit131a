@@ -1,0 +1,30 @@
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     width="500px" height="250px">
+
+  <!-- Polyline: connects multiple straight line points -->
+  <polyline stroke="green" stroke-width="5px" fill="none"
+            points="10,10 280,10 280,75 360,100" />
+
+  <!-- Path using straight lines (M = move, L = line) -->
+  <path stroke="pink" stroke-width="5px" fill="none"
+        d="M 10 20 L 270 20 270 85 360 110" />
+
+  <!-- Path using horizontal (H) and vertical (V) commands -->
+  <path stroke="blue" stroke-width="5px" fill="none"
+        d="M 10 30 H 260 V 95 L 360 120" />
+
+  <!-- Quadratic curve (Q) -->
+  <path stroke="red" stroke-width="3px" fill="none"
+        d="M 10 55 Q 100 90 10 130" />
+
+  <!-- Quadratic curve with fill -->
+  <path stroke="red" stroke-width="3px" fill="yellow"
+        d="M 90 55 Q 180 90 90 130" />
+
+  <!-- Complex path with dashed stroke -->
+  <path stroke="cyan" stroke-width="5px" fill="none"
+        stroke-dasharray="15,2"
+        d="M 10 160 H 170 Q 210 220 260 160 H 370" />
+
+</svg>
