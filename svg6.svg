@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Inserting SVG</title>
+  <meta charset="utf-8">
+  <meta name="description" content="working with SVG in the HTML">
+</head>
+
+<body>
+
+  <!-- Page heading -->
+  <h1>Here is my SVG</h1>
+
+  <!-- Embedding an external SVG file -->
+  <object width="250px" height="175px"
+          type="image/svg+xml"
+          data="svg6.svg">
+  </object>
+
+  <!-- Regular paragraph below the SVG -->
+  <p>Just a paragraph after the SVG image is presented</p>
+
+</body>
+
+</html>
