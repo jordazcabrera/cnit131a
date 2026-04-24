@@ -38,4 +38,44 @@
   <text x="70" y="30" fill="black">Translated</text>
 
 </g>
+
+<!-- Skewed version (tilted along Y-axis) -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(0,35), skewY(25)">
+
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <text x="15" y="30" fill="white">SVG</text>
+  <text x="70" y="30" fill="black">Y-Skewed</text>
+
+</g>     
+
+<!-- Rotated version -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(235,50), rotate(35)">
+
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <text x="15" y="30" fill="white">SVG</text>
+  <text x="70" y="30" fill="black">Rotated</text>
+
+</g>
+
+<!-- Scaled version (3x bigger) -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(0,140), scale(3)">
+
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <text x="15" y="30" fill="white">SVG</text>
+  <text x="70" y="30" fill="black">Scaled</text>
+
+</g>     
+     
 </svg>
