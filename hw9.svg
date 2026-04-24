@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="500" height="300"
+     viewBox="0 0 500 300">
+
+  <!-- Yellow rectangle with blue border -->
+  <rect x="20" y="20"
+        width="150" height="100"
+        fill="yellow"
+        stroke="blue"
+        stroke-width="4" />
+
+  <!-- Blue circle with red border -->
+  <circle cx="300" cy="70" r="50"
+          fill="blue"
+          stroke="red"
+          stroke-width="4" />
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="myGradient">
+      <stop offset="0%" stop-color="purple" />
+      <stop offset="100%" stop-color="orange" />
+    </linearGradient>
+  </defs>
+
+  <!-- Custom shape using gradient -->
+  <polygon points="150,200 250,150 350,200 300,260 200,260"
+           fill="url(#myGradient)" />
+
+</svg>
