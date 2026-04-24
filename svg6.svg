@@ -1,0 +1,81 @@
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     width="500px" height="250px">
+
+  <!-- Group element to apply shared styles -->
+  <!-- All text inside will use this font -->
+  <g font-size="1.5em" font-family="Verdana">
+
+    <!-- Red rectangle (background for "SVG") -->
+    <rect x="10" y="10" width="55px" height="25px" fill="red" />
+
+    <!-- Green rectangle (background for "CNIT 131A") -->
+    <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+    <!-- White text on red rectangle -->
+    <text x="15" y="30" fill="white">SVG</text>
+
+    <!-- Black text on green rectangle -->
+    <text x="70" y="30" fill="black">CNIT 131A</text>
+
+  </g>
+
+  <!-- Group with styling and transformation -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(235, 0)">
+
+  <!-- Red rectangle -->
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+
+  <!-- Green rectangle -->
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <!-- White text -->
+  <text x="15" y="30" fill="white">SVG</text>
+
+  <!-- Black text -->
+  <text x="70" y="30" fill="black">Translated</text>
+
+</g>
+
+<!-- Skewed version (tilted along Y-axis) -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(0,35), skewY(25)">
+
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <text x="15" y="30" fill="white">SVG</text>
+  <text x="70" y="30" fill="black">Y-Skewed</text>
+
+</g>     
+
+<!-- Rotated version -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(235,50), rotate(35)">
+
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <text x="15" y="30" fill="white">SVG</text>
+  <text x="70" y="30" fill="black">Rotated</text>
+
+</g>
+
+<!-- Scaled version (3x bigger) -->
+<g font-size="1.5em"
+   font-family="Verdana"
+   transform="translate(0,140), scale(3)">
+
+  <rect x="10" y="10" width="55px" height="25px" fill="red" />
+  <rect x="65" y="10" width="150px" height="25px" fill="lime" />
+
+  <text x="15" y="30" fill="white">SVG</text>
+  <text x="70" y="30" fill="black">Scaled</text>
+
+</g>     
+     
+</svg>
