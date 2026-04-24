@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+
+<!-- Root SVG container -->
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
      width="500px" height="250px">
 
-  <rect x="10" y="10" fill="red" width="120px" height="120px" />
-  
-  <rect x="140" y="10" rx="20" ry="20" fill="blue" width="180px" height="120px" />
-  
-  <rect x="10" y="150" opacity="0.3" fill="pink" width="100px" height="80px" />
-  
-  <circle fill="yellow" cx="180" cy="190" r="40px"
-          stroke="red" stroke-width="2px" />
+  <!-- Red square (top-left) -->
+  <rect x="10" y="10"
+        width="120px" height="120px"
+        fill="red" />
+
+  <!-- Blue rounded rectangle (top middle) -->
+  <!-- rx and ry control corner roundness -->
+  <rect x="140" y="10"
+        width="180px" height="120px"
+        rx="20" ry="20"
+        fill="blue" />
+
+  <!-- Semi-transparent pink rectangle (bottom-left) -->
+  <!-- opacity controls transparency (0 = invisible, 1 = solid) -->
+  <rect x="10" y="150"
+        width="100px" height="80px"
+        fill="pink"
+        opacity="0.3" />
+
+  <!-- Yellow circle with red border -->
+  <!-- cx, cy = center position; r = radius -->
+  <circle cx="180" cy="190" r="40px"
+          fill="yellow"
+          stroke="red"
+          stroke-width="2px" />
+
+  <!-- Green ellipse (top-right) -->
+  <!-- cx, cy = center; rx = horizontal radius; ry = vertical radius -->
+  <ellipse cx="380" cy="40"
+           rx="50px" ry="30px"
+           fill="green" />
+
+  <!-- Lime triangle using polygon -->
+  <!-- points = list of x,y coordinate pairs -->
+  <polygon points="300,230 360,150 420,230"
+           fill="lime" />
 
 </svg>
