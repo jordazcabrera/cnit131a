@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+     width="500px" height="250px">
+
+  <rect x="10" y="10" fill="red" width="120px" height="120px" />
+  
+  <rect x="140" y="10" rx="20" ry="20" fill="blue" width="180px" height="120px" />
+  
+  <rect x="10" y="150" opacity="0.3" fill="pink" width="100px" height="80px" />
+  
+  <circle fill="yellow" cx="180" cy="190" r="40px"
+          stroke="red" stroke-width="2px" />
+
+</svg>
