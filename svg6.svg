@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="500px" height="350px">
+
+  <!-- Clickable link -->
+  <a xlink:href="http://www.ccsf.edu">
+    <text x="10" y="150">City College of San Francisco</text>
+  </a>
+
+  <!-- External JavaScript file -->
+  <script type="text/javascript" xlink:href="script.js" />
+
+  <!-- Invisible path used for curved text -->
+  <path id="mypath"
+        fill="none"
+        stroke="none"
+        d="M 40 120 Q 50 -20 390 80" />
+
+  <!-- Text that follows the curve -->
+  <text fill="blue" font-size="2em">
+    <textPath xlink:href="#mypath">
+      Creating a Curved Text with SVG
+    </textPath>
+  </text>
+
+  <!-- Definitions for reusable graphics -->
+  <defs>
+
+    <!-- Reusable red alert icon -->
+    <g id="redalert" font-size="2.5em">
+
+      <!-- Red circle -->
+      <circle r="30px" fill="red" />
+
+      <!-- Exclamation mark -->
+      <text x="-10" y="20" fill="white">!</text>
+
+    </g>
+
+  </defs>
+
+  <!-- Reusing the red alert icon in different positions -->
+  <use x="100" y="100" xlink:href="#redalert" />
+  <use x="200" y="100" xlink:href="#redalert" />
+  <use x="300" y="100" xlink:href="#redalert" />
+
+</svg>
