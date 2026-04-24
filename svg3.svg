@@ -1,0 +1,46 @@
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     width="500px" height="250px">
+
+  <!-- Red horizontal line -->
+  <line x1="10" y1="10" x2="400" y2="10"
+        stroke="red" stroke-width="3px" />
+
+  <!-- Blue diagonal line -->
+  <line x1="10" y1="10" x2="400" y2="110"
+        stroke="blue" stroke-width="5px" />
+
+  <!-- Green dashed horizontal line -->
+  <line x1="10" y1="120" x2="400" y2="120"
+        stroke="green" stroke-width="5px"
+        stroke-dasharray="15,2" />
+
+  <!-- Thick orange dashed line -->
+  <line x1="10" y1="150" x2="400" y2="150"
+        stroke="orange" stroke-width="15px"
+        stroke-dasharray="10,2,10" />
+
+  <!-- Definitions section for reusable elements -->
+  <defs>
+
+    <!-- Linear gradient definition -->
+    <!-- id="LGx" allows us to reference it later -->
+    <linearGradient id="LGx">
+
+      <!-- Start color (0%) -->
+      <stop offset="0%" stop-color="yellow" />
+
+      <!-- End color (100%) -->
+      <stop offset="100%" stop-color="purple" />
+
+    </linearGradient>
+
+  </defs>
+
+  <!-- Rectangle filled with the gradient -->
+  <!-- fill="url(#LGx)" applies the gradient -->
+  <rect x="10" y="190"
+        width="300px" height="30px"
+        fill="url(#LGx)" />
+
+</svg>
