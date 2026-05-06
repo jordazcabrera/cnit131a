@@ -1,0 +1,19 @@
+{
+   "person": [
+       {
+           "firstName": "Laura",
+           "lastName": "Kent",
+           "job": "Programmer"
+       },
+       {
+           "firstName": "Bruce",
+           "lastName": "Wayne",
+           "job": "Teacher"
+       },
+       {
+           "firstName": "Liza",
+           "lastName": "Parker",
+           "job": "Photographer"
+       }
+   ]
+}
