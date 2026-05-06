@@ -1,0 +1,28 @@
+<books>
+<book pages="30">
+   <title>Title of Book</title>
+   <author>Julius Connor</author>
+   <publisher>ABC</publisher>
+</book>
+<book pages="130">
+   <title>Another Title</title>
+   <author>Jannette Dios</author>
+   <publisher>XYZ</publisher>
+</book>
+</books>
+
+
+[
+   {
+      "@pages": "30",
+      "title": "Title of Book",
+      "author": "Julius Connor",
+      "publisher": "ABC"
+   },
+   {
+      "@pages": "130",
+      "title": "Another Title",
+      "author": "Jannette Dios",
+      "publisher": "XYZ"
+   }
+]
