@@ -1,0 +1,11 @@
+{{#speakers}}
+	<div class="speaker">
+		<img src="images/{{shortname}}.jpg" alt="Photo of {{name}}" />
+		<h3>{{name}}</h3>
+		<h4>{{reknown}}</h4>
+		<p>{{bio}}</p>
+	</div>
+{{/speakers}}
+
+// Comments: template to be used setting the name of the jpg file based on the shortname of the speaker and the alt attribute value based on the name
+// You will also have headings and paragraphs based on data coming from the json file
