@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JSON Alert</title>
+<script>
+var myjson = {
+   "name":"Julian",
+   "age":25    
+};
+
+var output = '';
+for (var entry in myjson) {
+   output += 'key: ' + entry + ' | value: ' + myjson[entry] + '\n';
+}
+alert(output);
+</script>
+
+</head> 
+<body>
+<p>Just a paragraph here</p>
+</body>
+</html>
