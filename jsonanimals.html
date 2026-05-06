@@ -2,36 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+
+<!-- Title displayed in the browser tab -->
 <title>JSON Animals</title>
+
 </head> 
+
 <body>
+
+    <!-- Instruction text for the user -->
     <p>Display JSON file on HTML page:</p>
+
+    <!-- This paragraph will display the animal data -->
     <p id="demo"></p>
+
+    <!-- Button that triggers the displayInfo() function when clicked -->
     <button onclick="displayInfo()">Display</button>
+
     <script>
+
+        // Variable used as a counter in the loop
         var i;
+
+        // This will store the formatted animal information as a string
         var animalinfo = "";
-        var animal = [{
-            "type": "bear",
-            "nickname": "buddy",
-            "location": "CA"
-        }, {
-            "type": "lion",
-            "nickname": "boldy",
-            "location": "AZ"
-        }, {
-            "type": "eagle",
-            "nickname": "jitty",
-            "location": "MA"
-        }];
+
+        // JSON-like array of animal objects
+        var animal = [
+            {
+                "type": "bear",
+                "nickname": "buddy",
+                "location": "CA"
+            },
+            {
+                "type": "lion",
+                "nickname": "boldy",
+                "location": "AZ"
+            },
+            {
+                "type": "eagle",
+                "nickname": "jitty",
+                "location": "MA"
+            }
+        ];
+
+        // Loop through each animal object in the array
         for (i = 0; i < animal.length; i++) {
-          
-            animalinfo += animal[i].type + "<br>" + animal[i].nickname + "<br>" + animal[i].location + "<br><p>********</p>";
+
+            // Build a string with animal details and line breaks for formatting
+            animalinfo += 
+                animal[i].type + "<br>" +
+                animal[i].nickname + "<br>" +
+                animal[i].location + "<br>" +
+                "<p>********</p>"; // separator between animals
         }
 
+        // Function runs when the button is clicked
         function displayInfo() {
+
+            // Insert the animal information into the paragraph with id="demo"
             document.getElementById("demo").innerHTML = animalinfo;
         }
+
     </script>
+
 </body>
 </html>
