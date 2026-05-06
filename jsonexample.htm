@@ -2,71 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-
-<!-- Page title shown in browser tab -->
 <title>JSON Array</title>
 
-<!-- jQuery library (used to simplify JavaScript and AJAX calls) -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
-    // Run this code when the page is fully loaded
-    $(function() {
+$(document).ready(function () {
 
-        // Create an empty array (not used later, but declared here)
-        var people = [];
+    // Load JSON data
+    $.getJSON('people.json', function (data) {
 
-        // Fetch JSON data from the file 'people.json'
-        $.getJSON('people.json', function(data) {
+        // Loop through each person object
+        $.each(data.person, function (i, f) {
 
-            // Loop through each person object in the JSON data
-            $.each(data.person, function(i, f) {
+            // Build table row (MATCHES table headers now)
+            var tblRow = "<tr>" +
+                "<td>" + f.firstName + "</td>" +
+                "<td>" + f.lastName + "</td>" +
+                "<td>" + f.email + "</td>" +
+                "<td>" + f.city + "</td>" +
+                "</tr>";
 
-                // Create a table row with data from JSON (first name, last name, job)
-                var tblRow = "<tr>" +
-                    "<td>" + f.firstName + "</td>" +
-                    "<td>" + f.lastName + "</td>" +
-                    "<td>" + f.job + "</td>" +
-                    "</td>" +  // (extra closing </td> — likely a mistake)
-                    "</tr>";
-
-                // Append the row to the table body
-                $(tblRow).appendTo("#userdata tbody");
-            });
-
+            // Append row to table
+            $("#userdata tbody").append(tblRow);
         });
 
+    }).fail(function () {
+        console.log("Error loading JSON file.");
     });
+
+});
 </script>
 
-</head> 
+</head>
 
 <body>
 
-<!-- Main wrapper for layout -->
 <div class="wrapper">
+<div class="profile">
 
-    <!-- Profile section containing the table -->
-    <div class="profile">
+<table id="userdata" border="2">
+<thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>City</th>
+    </tr>
+</thead>
 
-        <!-- Table to display user data -->
-        <table id="userdata" border="2">
+<tbody>
+</tbody>
 
-            <!-- Table header -->
-            <thead>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email Address</th>
-                <th>City</th>
-            </thead>
+</table>
 
-            <!-- Table body (rows will be inserted here dynamically) -->
-            <tbody>
-            </tbody>
-
-        </table>
-
-    </div>
+</div>
 </div>
 
 </body>
